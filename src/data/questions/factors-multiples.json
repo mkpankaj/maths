@@ -1,0 +1,502 @@
+[
+  {
+    "id": "fm-001",
+    "type": "mcq",
+    "text": "What are the factors of 12?",
+    "hasLatex": false,
+    "options": ["1, 2, 3, 4, 6, 12", "2, 3, 4, 6", "1, 2, 3, 12", "2, 4, 6, 12"],
+    "correctIndex": 0,
+    "explanation": "Factors are numbers that divide evenly into 12: 1, 2, 3, 4, 6, 12.",
+    "difficulty": 1
+  },
+  {
+    "id": "fm-002",
+    "type": "mcq",
+    "text": "Which is a multiple of 5?",
+    "hasLatex": false,
+    "options": ["12", "20", "23", "17"],
+    "correctIndex": 1,
+    "explanation": "20 is a multiple of 5 because 5 × 4 = 20.",
+    "difficulty": 1
+  },
+  {
+    "id": "fm-003",
+    "type": "mcq",
+    "text": "What is the HCF (Highest Common Factor) of 12 and 18?",
+    "hasLatex": false,
+    "options": ["2", "3", "6", "12"],
+    "correctIndex": 2,
+    "explanation": "Factors of 12: 1,2,3,4,6,12. Factors of 18: 1,2,3,6,9,18. Highest common: 6.",
+    "difficulty": 2
+  },
+  {
+    "id": "fm-004",
+    "type": "mcq",
+    "text": "What is the LCM (Least Common Multiple) of 4 and 6?",
+    "hasLatex": false,
+    "options": ["12", "24", "4", "6"],
+    "correctIndex": 0,
+    "explanation": "Multiples of 4: 4,8,12,16... Multiples of 6: 6,12,18... First common: 12.",
+    "difficulty": 2
+  },
+  {
+    "id": "fm-005",
+    "type": "true-false",
+    "text": "15 is a multiple of 3.",
+    "hasLatex": false,
+    "options": ["True", "False"],
+    "correctIndex": 0,
+    "explanation": "3 × 5 = 15, so yes, 15 is a multiple of 3.",
+    "difficulty": 1
+  },
+  {
+    "id": "fm-006",
+    "type": "mcq",
+    "text": "Is 7 a factor of 49?",
+    "hasLatex": false,
+    "options": ["No", "Yes", "Sometimes", "Never"],
+    "correctIndex": 1,
+    "explanation": "7 × 7 = 49, so 7 is a factor of 49.",
+    "difficulty": 1
+  },
+  {
+    "id": "fm-007",
+    "type": "mcq",
+    "text": "What are the multiples of 3 up to 15?",
+    "hasLatex": false,
+    "options": ["3, 6, 9, 12, 15", "3, 9, 15", "6, 12", "3, 6, 12"],
+    "correctIndex": 0,
+    "explanation": "Counting by 3s: 3, 6, 9, 12, 15.",
+    "difficulty": 1
+  },
+  {
+    "id": "fm-008",
+    "type": "mcq",
+    "text": "What is the HCF of 20 and 30?",
+    "hasLatex": false,
+    "options": ["5", "10", "15", "20"],
+    "correctIndex": 1,
+    "explanation": "Factors of 20: 1,2,4,5,10,20. Factors of 30: 1,2,3,5,6,10,15,30. HCF = 10.",
+    "difficulty": 2
+  },
+  {
+    "id": "fm-009",
+    "type": "true-false",
+    "text": "1 is a factor of every number.",
+    "hasLatex": false,
+    "options": ["True", "False"],
+    "correctIndex": 0,
+    "explanation": "Every number is divisible by 1, so 1 is a factor of all numbers.",
+    "difficulty": 1
+  },
+  {
+    "id": "fm-010",
+    "type": "mcq",
+    "text": "Which number has 8 as a factor?",
+    "hasLatex": false,
+    "options": ["10", "24", "14", "6"],
+    "correctIndex": 1,
+    "explanation": "24 ÷ 8 = 3, so 8 is a factor of 24.",
+    "difficulty": 1
+  },
+  {
+    "id": "fm-011",
+    "type": "mcq",
+    "text": "What is the LCM of 3 and 5?",
+    "hasLatex": false,
+    "options": ["8", "15", "10", "5"],
+    "correctIndex": 1,
+    "explanation": "Multiples of 3: 3,6,9,12,15... Multiples of 5: 5,10,15... LCM = 15.",
+    "difficulty": 1
+  },
+  {
+    "id": "fm-012",
+    "type": "true-false",
+    "text": "Every multiple of 4 is also a multiple of 2.",
+    "hasLatex": false,
+    "options": ["True", "False"],
+    "correctIndex": 0,
+    "explanation": "4 = 2×2, so all multiples of 4 are even and thus multiples of 2.",
+    "difficulty": 2
+  },
+  {
+    "id": "fm-013",
+    "type": "mcq",
+    "text": "How many factors does 16 have?",
+    "hasLatex": false,
+    "options": ["2", "4", "5", "8"],
+    "correctIndex": 2,
+    "explanation": "Factors of 16: 1, 2, 4, 8, 16. That's 5 factors.",
+    "difficulty": 2
+  },
+  {
+    "id": "fm-014",
+    "type": "mcq",
+    "text": "What is the HCF of 10 and 15?",
+    "hasLatex": false,
+    "options": ["2", "5", "10", "15"],
+    "correctIndex": 1,
+    "explanation": "Factors of 10: 1,2,5,10. Factors of 15: 1,3,5,15. HCF = 5.",
+    "difficulty": 1
+  },
+  {
+    "id": "fm-015",
+    "type": "mcq",
+    "text": "Is 13 a prime number?",
+    "hasLatex": false,
+    "options": ["Yes", "No", "Sometimes", "Always"],
+    "correctIndex": 0,
+    "explanation": "13 is only divisible by 1 and itself, so it's prime.",
+    "difficulty": 1
+  },
+  {
+    "id": "fm-016",
+    "type": "mcq",
+    "text": "What is the LCM of 6 and 8?",
+    "hasLatex": false,
+    "options": ["12", "24", "16", "14"],
+    "correctIndex": 1,
+    "explanation": "Multiples of 6: 6,12,18,24... Multiples of 8: 8,16,24... LCM = 24.",
+    "difficulty": 2
+  },
+  {
+    "id": "fm-017",
+    "type": "true-false",
+    "text": "0 is a multiple of every number.",
+    "hasLatex": false,
+    "options": ["True", "False"],
+    "correctIndex": 0,
+    "explanation": "0 = n × 0 for any number n, so 0 is a multiple of all numbers.",
+    "difficulty": 2
+  },
+  {
+    "id": "fm-018",
+    "type": "mcq",
+    "text": "What factors do 8 and 12 have in common?",
+    "hasLatex": false,
+    "options": ["1, 2, 4", "1, 2, 3, 4", "1, 4", "2, 4"],
+    "correctIndex": 0,
+    "explanation": "Factors of 8: 1,2,4,8. Factors of 12: 1,2,3,4,6,12. Common: 1,2,4.",
+    "difficulty": 1
+  },
+  {
+    "id": "fm-019",
+    "type": "mcq",
+    "text": "What is the smallest multiple of 7 greater than 50?",
+    "hasLatex": false,
+    "options": ["49", "56", "63", "70"],
+    "correctIndex": 1,
+    "explanation": "7 × 8 = 56, which is the first multiple of 7 greater than 50.",
+    "difficulty": 2
+  },
+  {
+    "id": "fm-020",
+    "type": "mcq",
+    "text": "What is the HCF of 9 and 12?",
+    "hasLatex": false,
+    "options": ["1", "3", "6", "9"],
+    "correctIndex": 1,
+    "explanation": "Factors of 9: 1,3,9. Factors of 12: 1,2,3,4,6,12. HCF = 3.",
+    "difficulty": 1
+  },
+  {
+    "id": "fm-021",
+    "type": "mcq",
+    "text": "Which is NOT a factor of 20?",
+    "hasLatex": false,
+    "options": ["4", "5", "6", "10"],
+    "correctIndex": 2,
+    "explanation": "20 ÷ 4 = 5, 20 ÷ 5 = 4, 20 ÷ 10 = 2. But 20 ÷ 6 = 3.33... so 6 is not a factor.",
+    "difficulty": 1
+  },
+  {
+    "id": "fm-022",
+    "type": "true-false",
+    "text": "The LCM of 5 and 10 is 50.",
+    "hasLatex": false,
+    "options": ["True", "False"],
+    "correctIndex": 1,
+    "explanation": "The LCM of 5 and 10 is 10 (since 10 is a multiple of 5), not 50.",
+    "difficulty": 1
+  },
+  {
+    "id": "fm-023",
+    "type": "mcq",
+    "text": "How many multiples of 6 are there between 1 and 30?",
+    "hasLatex": false,
+    "options": ["4", "5", "6", "7"],
+    "correctIndex": 1,
+    "explanation": "Multiples: 6, 12, 18, 24, 30. That's 5 multiples.",
+    "difficulty": 2
+  },
+  {
+    "id": "fm-024",
+    "type": "mcq",
+    "text": "What is the LCM of 9 and 12?",
+    "hasLatex": false,
+    "options": ["12", "18", "36", "9"],
+    "correctIndex": 2,
+    "explanation": "Multiples of 9: 9,18,27,36... Multiples of 12: 12,24,36... LCM = 36.",
+    "difficulty": 2
+  },
+  {
+    "id": "fm-025",
+    "type": "mcq",
+    "text": "Is 2 a factor of 25?",
+    "hasLatex": false,
+    "options": ["Yes", "No"],
+    "correctIndex": 1,
+    "explanation": "25 is odd, so 2 does not divide evenly into it. 2 is not a factor of 25.",
+    "difficulty": 1
+  },
+  {
+    "id": "fm-026",
+    "type": "mcq",
+    "text": "What are all factors of 15?",
+    "hasLatex": false,
+    "options": ["1, 3, 5, 15", "3, 5, 15", "1, 5, 15", "1, 15"],
+    "correctIndex": 0,
+    "explanation": "15 = 1×15 = 3×5. Factors: 1, 3, 5, 15.",
+    "difficulty": 1
+  },
+  {
+    "id": "fm-027",
+    "type": "true-false",
+    "text": "36 is a multiple of 9.",
+    "hasLatex": false,
+    "options": ["True", "False"],
+    "correctIndex": 0,
+    "explanation": "9 × 4 = 36, so yes, 36 is a multiple of 9.",
+    "difficulty": 1
+  },
+  {
+    "id": "fm-028",
+    "type": "mcq",
+    "text": "What is the HCF of 14 and 21?",
+    "hasLatex": false,
+    "options": ["2", "7", "14", "21"],
+    "correctIndex": 1,
+    "explanation": "Factors of 14: 1,2,7,14. Factors of 21: 1,3,7,21. HCF = 7.",
+    "difficulty": 2
+  },
+  {
+    "id": "fm-029",
+    "type": "mcq",
+    "text": "What is the LCM of 2 and 9?",
+    "hasLatex": false,
+    "options": ["11", "18", "9", "2"],
+    "correctIndex": 1,
+    "explanation": "Multiples of 2: 2,4,6,8,10,12,14,16,18... Multiples of 9: 9,18... LCM = 18.",
+    "difficulty": 1
+  },
+  {
+    "id": "fm-030",
+    "type": "mcq",
+    "text": "Which is a factor of both 12 and 18?",
+    "hasLatex": false,
+    "options": ["3", "4", "6", "9"],
+    "correctIndex": 2,
+    "explanation": "Factors of 12: 1,2,3,4,6,12. Factors of 18: 1,2,3,6,9,18. Common factor: 6.",
+    "difficulty": 1
+  },
+  {
+    "id": "fm-031",
+    "type": "true-false",
+    "text": "A prime number has exactly 2 factors.",
+    "hasLatex": false,
+    "options": ["True", "False"],
+    "correctIndex": 0,
+    "explanation": "Prime numbers are only divisible by 1 and themselves, so they have exactly 2 factors.",
+    "difficulty": 1
+  },
+  {
+    "id": "fm-032",
+    "type": "mcq",
+    "text": "What is the smallest prime number?",
+    "hasLatex": false,
+    "options": ["1", "2", "3", "5"],
+    "correctIndex": 1,
+    "explanation": "2 is the smallest prime number (1 is not considered prime).",
+    "difficulty": 1
+  },
+  {
+    "id": "fm-033",
+    "type": "mcq",
+    "text": "How many factors does 1 have?",
+    "hasLatex": false,
+    "options": ["0", "1", "2", "3"],
+    "correctIndex": 1,
+    "explanation": "1 only has itself as a factor, so it has 1 factor.",
+    "difficulty": 2
+  },
+  {
+    "id": "fm-034",
+    "type": "mcq",
+    "text": "What is the HCF of 16 and 24?",
+    "hasLatex": false,
+    "options": ["4", "8", "16", "24"],
+    "correctIndex": 1,
+    "explanation": "Factors of 16: 1,2,4,8,16. Factors of 24: 1,2,3,4,6,8,12,24. HCF = 8.",
+    "difficulty": 2
+  },
+  {
+    "id": "fm-035",
+    "type": "mcq",
+    "text": "Is 11 a prime number?",
+    "hasLatex": false,
+    "options": ["Yes", "No"],
+    "correctIndex": 0,
+    "explanation": "11 is only divisible by 1 and 11, so it's prime.",
+    "difficulty": 1
+  },
+  {
+    "id": "fm-036",
+    "type": "mcq",
+    "text": "What is the LCM of 4 and 10?",
+    "hasLatex": false,
+    "options": ["20", "40", "10", "14"],
+    "correctIndex": 0,
+    "explanation": "Multiples of 4: 4,8,12,16,20... Multiples of 10: 10,20... LCM = 20.",
+    "difficulty": 2
+  },
+  {
+    "id": "fm-037",
+    "type": "true-false",
+    "text": "Every even number has 2 as a factor.",
+    "hasLatex": false,
+    "options": ["True", "False"],
+    "correctIndex": 0,
+    "explanation": "Even numbers are divisible by 2 by definition.",
+    "difficulty": 1
+  },
+  {
+    "id": "fm-038",
+    "type": "mcq",
+    "text": "What is the smallest common multiple of 3 and 4?",
+    "hasLatex": false,
+    "options": ["7", "12", "8", "3"],
+    "correctIndex": 1,
+    "explanation": "Multiples of 3: 3,6,9,12... Multiples of 4: 4,8,12... LCM = 12.",
+    "difficulty": 1
+  },
+  {
+    "id": "fm-039",
+    "type": "mcq",
+    "text": "Which number is a composite number?",
+    "hasLatex": false,
+    "options": ["2", "5", "7", "8"],
+    "correctIndex": 3,
+    "explanation": "8 has factors 1,2,4,8 so it's composite. 2,5,7 are prime.",
+    "difficulty": 1
+  },
+  {
+    "id": "fm-040",
+    "type": "mcq",
+    "text": "What is the HCF of 18 and 24?",
+    "hasLatex": false,
+    "options": ["6", "12", "18", "24"],
+    "correctIndex": 0,
+    "explanation": "Factors of 18: 1,2,3,6,9,18. Factors of 24: 1,2,3,4,6,8,12,24. HCF = 6.",
+    "difficulty": 2
+  },
+  {
+    "id": "fm-041",
+    "type": "true-false",
+    "text": "4 is a multiple of 2.",
+    "hasLatex": false,
+    "options": ["True", "False"],
+    "correctIndex": 0,
+    "explanation": "2 × 2 = 4, so 4 is a multiple of 2.",
+    "difficulty": 1
+  },
+  {
+    "id": "fm-042",
+    "type": "mcq",
+    "text": "What is the LCM of 5 and 7?",
+    "hasLatex": false,
+    "options": ["12", "35", "5", "7"],
+    "correctIndex": 1,
+    "explanation": "5 and 7 share no common factors except 1, so LCM = 5 × 7 = 35.",
+    "difficulty": 2
+  },
+  {
+    "id": "fm-043",
+    "type": "mcq",
+    "text": "How many factors does a prime number have?",
+    "hasLatex": false,
+    "options": ["0", "1", "2", "3"],
+    "correctIndex": 2,
+    "explanation": "Prime numbers have exactly 2 factors: 1 and itself.",
+    "difficulty": 1
+  },
+  {
+    "id": "fm-044",
+    "type": "mcq",
+    "text": "What is the HCF of 11 and 13?",
+    "hasLatex": false,
+    "options": ["1", "11", "13", "24"],
+    "correctIndex": 0,
+    "explanation": "11 and 13 are both prime, so their only common factor is 1.",
+    "difficulty": 2
+  },
+  {
+    "id": "fm-045",
+    "type": "true-false",
+    "text": "21 is a multiple of 7.",
+    "hasLatex": false,
+    "options": ["True", "False"],
+    "correctIndex": 0,
+    "explanation": "7 × 3 = 21, so 21 is a multiple of 7.",
+    "difficulty": 1
+  },
+  {
+    "id": "fm-046",
+    "type": "mcq",
+    "text": "What is the LCM of 6 and 9?",
+    "hasLatex": false,
+    "options": ["18", "54", "15", "9"],
+    "correctIndex": 0,
+    "explanation": "Multiples of 6: 6,12,18... Multiples of 9: 9,18... LCM = 18.",
+    "difficulty": 2
+  },
+  {
+    "id": "fm-047",
+    "type": "mcq",
+    "text": "Is 3 a factor of 27?",
+    "hasLatex": false,
+    "options": ["Yes", "No"],
+    "correctIndex": 0,
+    "explanation": "27 ÷ 3 = 9, so 3 is a factor of 27.",
+    "difficulty": 1
+  },
+  {
+    "id": "fm-048",
+    "type": "mcq",
+    "text": "What is the HCF of 6 and 15?",
+    "hasLatex": false,
+    "options": ["3", "6", "15", "30"],
+    "correctIndex": 0,
+    "explanation": "Factors of 6: 1,2,3,6. Factors of 15: 1,3,5,15. HCF = 3.",
+    "difficulty": 1
+  },
+  {
+    "id": "fm-049",
+    "type": "true-false",
+    "text": "The LCM of two numbers is always greater than both numbers.",
+    "hasLatex": false,
+    "options": ["True", "False"],
+    "correctIndex": 1,
+    "explanation": "Not always. If one number is a multiple of the other, the LCM equals the larger number.",
+    "difficulty": 2
+  },
+  {
+    "id": "fm-050",
+    "type": "mcq",
+    "text": "What is the smallest number that has 4 and 6 as factors?",
+    "hasLatex": false,
+    "options": ["10", "12", "24", "10"],
+    "correctIndex": 1,
+    "explanation": "The smallest common multiple of 4 and 6 is 12 (4×3=12, 6×2=12).",
+    "difficulty": 2
+  }
+]

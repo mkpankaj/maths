@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply font-sans bg-gradient-to-br from-slate-50 to-slate-100 min-h-screen;
+}
+
+:focus-visible {
+  @apply outline-2 outline-offset-2 outline-blue-500;
+}
+
+button:disabled {
+  @apply cursor-not-allowed opacity-60;
+}
