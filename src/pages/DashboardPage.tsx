@@ -69,7 +69,7 @@ export function DashboardPage() {
         <div className="space-y-4">
           {TOPIC_LIST.map((topic) => {
             const p = progress[topic.id as TopicId]
-            const recentScores = p?.recentScores ?? []
+            const quizHistory = p?.quizHistory ?? []
             const hasPlayed = (p?.attempts ?? 0) > 0
 
             return (
@@ -96,14 +96,14 @@ export function DashboardPage() {
 
                     {hasPlayed ? (
                       <div className="space-y-2">
-                        {recentScores.map((score, idx) => (
+                        {quizHistory.map((attempt, idx) => (
                           <div key={idx} className="flex items-center gap-3">
                             <div className="flex items-center gap-1 w-24 text-sm text-slate-500">
-                              <ScoreEmoji score={score} />
-                              <span>Quiz {p!.attempts - idx}</span>
+                              <ScoreEmoji score={attempt.score} />
+                              <span>Quiz {idx + 1}</span>
                             </div>
                             <div className="flex-1">
-                              <ScoreBar score={score} />
+                              <ScoreBar score={attempt.score} />
                             </div>
                           </div>
                         ))}

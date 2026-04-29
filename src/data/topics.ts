@@ -1,6 +1,6 @@
 import { Topic } from '../types'
 
-export const TOPICS: Record<string, Topic> = {
+export const TOPICS: Readonly<Record<string, Topic>> = {
   'factors-multiples': {
     id: 'factors-multiples',
     label: 'Factors & Multiples',

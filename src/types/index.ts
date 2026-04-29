@@ -27,11 +27,11 @@ export interface VideoLink {
 }
 
 export interface Topic {
-  id: TopicId
-  label: string
-  icon: string
-  color: string
-  videos: VideoLink[]
+  readonly id: TopicId
+  readonly label: string
+  readonly icon: string
+  readonly color: string
+  readonly videos: readonly VideoLink[]
 }
 
 export interface QuizAnswer {
@@ -51,10 +51,16 @@ export interface QuizSession {
   startedAt: number
 }
 
+export interface QuizAttempt {
+  score: number
+  timestamp: number
+  questionCount: number
+}
+
 export interface TopicProgress {
   topicId: TopicId
   bestScore: number
   attempts: number
   lastPlayedAt: number
-  recentScores: number[]  // last 5 scores, newest first
+  quizHistory: QuizAttempt[]  // all quiz attempts, newest first
 }
