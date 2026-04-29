@@ -33,7 +33,7 @@ export function AnswerButton({
     <button
       onClick={onClick}
       disabled={disabled}
-      className={`w-full p-4 rounded-lg font-semibold text-lg transition-all duration-200 ${bgColor} disabled:cursor-not-allowed`}
+      className={`w-full p-4 rounded-lg font-semibold text-xl transition-all duration-200 ${bgColor} disabled:cursor-not-allowed`}
     >
       {children}
     </button>

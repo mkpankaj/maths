@@ -10,6 +10,7 @@ interface QuizEndScreenProps {
   totalQuestions: number
   answers: QuizAnswer[]
   questions: Question[]
+  totalTime?: string
   onPlayAgain: () => void
   onBackHome: () => void
 }
@@ -19,6 +20,7 @@ export function QuizEndScreen({
   totalQuestions,
   answers,
   questions,
+  totalTime,
   onPlayAgain,
   onBackHome,
 }: QuizEndScreenProps) {
@@ -51,9 +53,15 @@ export function QuizEndScreen({
         <div className="text-5xl font-bold text-blue-600 mb-4">
           {score} / {totalQuestions}
         </div>
-        <p className="text-lg text-slate-600">
+        <p className="text-lg text-slate-600 mb-6">
           {Math.round((score / totalQuestions) * 100)}%
         </p>
+        {totalTime && (
+          <div className="border-t pt-4">
+            <p className="text-sm font-semibold text-slate-600 mb-1">⏱️ Total Time</p>
+            <p className="text-2xl font-bold text-purple-600">{totalTime}</p>
+          </div>
+        )}
       </Card>
 
       <div className="flex gap-4">

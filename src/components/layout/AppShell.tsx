@@ -3,7 +3,7 @@ import { Link, Outlet } from 'react-router-dom'
 export function AppShell() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100">
-      <nav className="bg-gradient-to-r from-purple-600 to-blue-600 text-white shadow-lg">
+      <nav className="bg-black text-white shadow-lg">
         <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
           <Link to="/" className="flex items-center gap-2 text-2xl font-bold hover:opacity-90">
             <span className="text-3xl">🧮</span>

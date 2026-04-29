@@ -4,6 +4,7 @@ import { TOPICS } from '../data/topics'
 import { PageWrapper } from '../components/layout/PageWrapper'
 import { useQuizStore } from '../store/quizStore'
 import { useProgress } from '../hooks/useProgress'
+import { formatTime } from '../hooks/useTimer'
 import { QuizEndScreen } from '../components/quiz/QuizEndScreen'
 
 export function ResultPage() {
@@ -34,6 +35,7 @@ export function ResultPage() {
   }
 
   const score = session.answers.filter((a) => a.isCorrect).length
+  const totalTime = Date.now() - session.startedAt
 
   return (
     <PageWrapper>
@@ -43,6 +45,7 @@ export function ResultPage() {
           totalQuestions={10}
           answers={session.answers}
           questions={session.questions}
+          totalTime={formatTime(totalTime)}
           onPlayAgain={() => {
             resetQuiz()
             navigate(`/topic/${topicId}/quiz`)

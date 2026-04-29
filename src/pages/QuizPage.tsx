@@ -4,9 +4,10 @@ import { TOPICS } from '../data/topics'
 import { PageWrapper } from '../components/layout/PageWrapper'
 import { useQuizStore } from '../store/quizStore'
 import { useQuiz } from '../hooks/useQuiz'
+import { useTimer, formatTime } from '../hooks/useTimer'
 import { ProgressBar } from '../components/quiz/ProgressBar'
 import { QuizQuestion } from '../components/quiz/QuizQuestion'
-import { getQuestionBank } from '../data/questions/index'
+import { generateQuestions } from '../data/generators/index'
 
 export function QuizPage() {
   const { topicId } = useParams<{ topicId: string }>()
@@ -15,13 +16,14 @@ export function QuizPage() {
   const submitAnswer = useQuizStore((s) => s.submitAnswer)
   const { startNewQuiz } = useQuiz()
   const [submitted, setSubmitted] = useState(false)
+  const elapsed = useTimer(session.startedAt)
 
   const topic = topicId ? TOPICS[topicId] : null
 
   useEffect(() => {
     if (!session.topicId || session.status === 'idle') {
       if (topicId) {
-        const questionBank = getQuestionBank(topicId)
+        const questionBank = generateQuestions(topicId)
         if (questionBank) {
           startNewQuiz(topicId as any, questionBank)
         } else {
@@ -63,11 +65,19 @@ export function QuizPage() {
   return (
     <PageWrapper>
       <div className="max-w-3xl mx-auto">
-        <ProgressBar
-          current={session.currentIndex}
-          total={10}
-          topicColor={topic.color}
-        />
+        <div className="flex items-center justify-between mb-6">
+          <div className="flex-1">
+            <ProgressBar
+              current={session.currentIndex}
+              total={10}
+              topicColor={topic.color}
+            />
+          </div>
+          <div className="ml-6 px-4 py-2 bg-blue-100 rounded-lg border-2 border-blue-500">
+            <div className="text-sm font-semibold text-blue-600">⏱️ Time</div>
+            <div className="text-2xl font-bold text-blue-700">{formatTime(elapsed)}</div>
+          </div>
+        </div>
         <QuizQuestion
           question={currentQuestion}
           onSubmit={handleSubmit}
