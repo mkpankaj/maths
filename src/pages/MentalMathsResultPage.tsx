@@ -97,8 +97,8 @@ export function MentalMathsResultPage() {
 
         {/* Question-by-question review */}
         <Card>
-          <h3 className="text-2xl font-bold text-slate-800 mb-5">Review Answers</h3>
-          <div className="space-y-5">
+          <h3 className="text-4xl font-bold text-slate-800 mb-6">Review Answers</h3>
+          <div className="space-y-6">
             {session.answers.map((answer, idx) => {
               const question = session.questions[idx]
               const notAttempted = answer.chosenIndex === null
@@ -108,7 +108,7 @@ export function MentalMathsResultPage() {
               return (
                 <div
                   key={idx}
-                  className={`border-l-4 pl-4 py-2 ${
+                  className={`border-l-4 pl-5 py-3 ${
                     notAttempted
                       ? 'border-gray-400'
                       : answer.isCorrect
@@ -116,21 +116,21 @@ export function MentalMathsResultPage() {
                       : 'border-red-400'
                   }`}
                 >
-                  <div className="flex items-center justify-between mb-1">
-                    <p className="font-semibold text-slate-800">
+                  <div className="flex items-center justify-between mb-2">
+                    <p className="text-xl font-bold text-slate-800">
                       Q{idx + 1}:{' '}
                       {notAttempted ? '⏭ Not Attempted' : answer.isCorrect ? '✅ Correct' : '❌ Wrong'}
                     </p>
-                    <span className="text-xs text-slate-400 ml-4 flex-shrink-0">
+                    <span className="text-lg text-slate-400 ml-4 flex-shrink-0">
                       ⏱ {formatMs(answer.timeTakenMs)}
                     </span>
                   </div>
 
-                  <p className="text-sm text-slate-700 mb-2">
+                  <p className="text-xl text-slate-700 mb-3">
                     <KatexRenderer text={question.text} hasLatex={question.hasLatex} />
                   </p>
 
-                  <div className="text-sm space-y-0.5">
+                  <div className="text-lg space-y-1">
                     {notAttempted ? (
                       <p className="text-gray-500">No answer selected (time ran out).</p>
                     ) : (
@@ -147,7 +147,7 @@ export function MentalMathsResultPage() {
                       </p>
                     )}
 
-                    <p className="text-indigo-600 mt-1">{question.explanation}</p>
+                    <p className="text-indigo-600 mt-2">{question.explanation}</p>
                   </div>
                 </div>
               )
