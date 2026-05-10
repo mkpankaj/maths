@@ -6,6 +6,8 @@ import { ReadPage } from './pages/ReadPage'
 import { QuizPage } from './pages/QuizPage'
 import { ResultPage } from './pages/ResultPage'
 import { DashboardPage } from './pages/DashboardPage'
+import { MentalMathsPage } from './pages/MentalMathsPage'
+import { MentalMathsResultPage } from './pages/MentalMathsResultPage'
 
 const router = createBrowserRouter([
   {
@@ -18,6 +20,14 @@ const router = createBrowserRouter([
       {
         path: '/dashboard',
         element: <DashboardPage />,
+      },
+      {
+        path: '/mental-maths',
+        element: <MentalMathsPage />,
+      },
+      {
+        path: '/mental-maths/result',
+        element: <MentalMathsResultPage />,
       },
       {
         path: '/topic/:topicId',

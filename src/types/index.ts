@@ -64,3 +64,23 @@ export interface TopicProgress {
   lastPlayedAt: number
   quizHistory: QuizAttempt[]  // all quiz attempts, newest first
 }
+
+export interface MentalMathsAnswer {
+  questionId: string
+  chosenIndex: number | null  // null = not attempted
+  isCorrect: boolean
+  timeTakenMs: number
+}
+
+export interface MentalMathsAttempt {
+  id: string
+  date: number
+  score: number
+  totalTimeMs: number
+  answers: MentalMathsAnswer[]
+  questions: Question[]
+}
+
+export interface MentalMathsProgress {
+  attempts: MentalMathsAttempt[]  // newest first
+}

@@ -9,13 +9,22 @@ export function AppShell() {
             <span className="text-3xl">🧮</span>
             <span>MathsKid</span>
           </Link>
-          <Link
-            to="/dashboard"
-            className="flex items-center gap-1.5 bg-white/20 hover:bg-white/30 transition-colors px-4 py-2 rounded-full text-sm font-semibold"
-          >
-            <span>📊</span>
-            <span>My Dashboard</span>
-          </Link>
+          <div className="flex items-center gap-2">
+            <Link
+              to="/mental-maths"
+              className="flex items-center gap-1.5 bg-indigo-500 hover:bg-indigo-400 transition-colors px-4 py-2 rounded-full text-sm font-semibold"
+            >
+              <span>🧠</span>
+              <span>Mental Maths</span>
+            </Link>
+            <Link
+              to="/dashboard"
+              className="flex items-center gap-1.5 bg-white/20 hover:bg-white/30 transition-colors px-4 py-2 rounded-full text-sm font-semibold"
+            >
+              <span>📊</span>
+              <span>My Dashboard</span>
+            </Link>
+          </div>
         </div>
       </nav>
       <Outlet />

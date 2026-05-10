@@ -3,8 +3,10 @@ import { Link } from 'react-router-dom'
 import { PageWrapper } from '../components/layout/PageWrapper'
 import { Card } from '../components/ui/Card'
 import { useProgress } from '../hooks/useProgress'
+import { useMentalMathsProgress } from '../hooks/useMentalMathsProgress'
 import { TOPIC_LIST } from '../data/topics'
 import { TopicId } from '../types'
+import { formatTime } from '../hooks/useTimer'
 
 function ScoreBar({ score }: { score: number }) {
   const pct = (score / 10) * 100
@@ -31,9 +33,11 @@ function ScoreEmoji({ score }: { score: number }) {
 
 export function DashboardPage() {
   const { progress, loadAllProgress } = useProgress()
+  const { progress: mmProgress, loadProgress: loadMmProgress } = useMentalMathsProgress()
 
   useEffect(() => {
     loadAllProgress()
+    loadMmProgress()
   }, [])
 
   const totalAttempts = Object.values(progress).reduce((sum, p) => sum + (p?.attempts ?? 0), 0)
@@ -123,6 +127,54 @@ export function DashboardPage() {
               </Card>
             )
           })}
+        </div>
+
+        {/* Mental Maths history */}
+        <div className="mt-10">
+          <div className="flex items-center justify-between mb-4">
+            <h2 className="text-2xl font-bold text-slate-800">🧠 Mental Maths</h2>
+            <Link
+              to="/mental-maths"
+              className="px-4 py-2 rounded-lg bg-indigo-50 text-indigo-600 text-sm font-semibold hover:bg-indigo-100 transition-colors"
+            >
+              Start Quiz
+            </Link>
+          </div>
+
+          {mmProgress.attempts.length === 0 ? (
+            <Card>
+              <p className="text-slate-400 text-sm">No Mental Maths quizzes yet. Give it a try!</p>
+            </Card>
+          ) : (
+            <Card>
+              <div className="divide-y divide-slate-100">
+                {mmProgress.attempts.map((attempt, idx) => {
+                  const date = new Date(attempt.date)
+                  const dateStr = date.toLocaleDateString(undefined, { day: 'numeric', month: 'short', year: 'numeric' })
+                  const timeStr = date.toLocaleTimeString(undefined, { hour: '2-digit', minute: '2-digit' })
+                  const pct = Math.round((attempt.score / 10) * 100)
+                  const color =
+                    attempt.score >= 8 ? 'bg-green-500' : attempt.score >= 6 ? 'bg-yellow-400' : attempt.score >= 4 ? 'bg-orange-400' : 'bg-red-400'
+
+                  return (
+                    <div key={attempt.id} className="flex items-center gap-4 py-3">
+                      <div className="w-6 text-center text-sm text-slate-400 font-medium">#{idx + 1}</div>
+                      <div className="flex-1 min-w-0">
+                        <div className="flex items-center gap-2 mb-1">
+                          <div className="flex-1 h-4 bg-gray-100 rounded-full overflow-hidden">
+                            <div className={`h-full ${color} rounded-full`} style={{ width: `${pct}%` }} />
+                          </div>
+                          <span className="text-sm font-bold text-slate-700 w-10 text-right">{attempt.score}/10</span>
+                        </div>
+                        <div className="text-xs text-slate-400">{dateStr} · {timeStr}</div>
+                      </div>
+                      <div className="text-sm text-slate-500 flex-shrink-0">⏱ {formatTime(attempt.totalTimeMs)}</div>
+                    </div>
+                  )
+                })}
+              </div>
+            </Card>
+          )}
         </div>
       </div>
     </PageWrapper>

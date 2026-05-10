@@ -143,7 +143,7 @@ function makeSquarePerimeter(id: string): Question {
 }
 
 function makeTriangleArea(id: string): Question {
-  let base = randInt(2, 20)
+  const base = randInt(2, 20)
   let height = randInt(2, 15)
 
   while ((base * height) % 2 !== 0) {

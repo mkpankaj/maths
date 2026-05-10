@@ -7,7 +7,9 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "lint": "tsc --noEmit"
+    "lint": "tsc --noEmit",
+    "lint:eslint": "eslint src",
+    "test:e2e": "echo No e2e tests configured yet"
   },
   "dependencies": {
     "canvas-confetti": "^1.9.0",
@@ -23,11 +25,16 @@
     "@types/canvas-confetti": "^1.6.4",
     "@types/react": "^18.2.37",
     "@types/react-dom": "^18.2.15",
+    "@typescript-eslint/eslint-plugin": "^8.59.2",
+    "@typescript-eslint/parser": "^8.59.2",
     "@vitejs/plugin-react": "^4.2.0",
     "autoprefixer": "^10.4.16",
+    "eslint": "^10.3.0",
+    "eslint-plugin-react-hooks": "^7.1.1",
     "postcss": "^8.4.31",
     "tailwindcss": "^3.3.6",
     "typescript": "^5.9.3",
+    "typescript-eslint": "^8.59.2",
     "vite": "^5.0.2"
   }
 }
